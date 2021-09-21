@@ -1,20 +1,13 @@
 // Import stylesheets
-import './style.css';
+//import './style.css';
 
 // Write TypeScript code!
-const appDiv: HTMLElement = document.getElementById('app');
-appDiv.innerHTML = `<h1>TypeScript Starter</h1>`;
-
-const title: HTMLElement = document.querySelector('.title');
-
-function handleCilck() {
-  console.log('click');
-  title.style.color = 'red';
+function a(f: (a: any, b: any) => any //import './style.css';
+){
+  return f;
 }
-function handleMouseEnter() {
-  console.log('click');
-}
-console.log(title);
 
-title.addEventListener('click', handleCilck);
-title.addEventListener('mouseenter', handleMouseEnter);
+let add=(a: any,b: any)=>a+b;
+
+let a2=a(add);
+console.log(a2(2,4))

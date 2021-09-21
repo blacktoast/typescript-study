@@ -4,13 +4,22 @@
 var appDiv = document.getElementById('app');
 appDiv.innerHTML = "<h1>TypeScript Starter</h1>";
 var title = document.querySelector('.title');
+
 function handleCilck() {
-    console.log('click');
-    title.style.color = 'red';
+    title.classList.toggle('clicked');
+    
 }
 function handleMouseEnter() {
-    console.log('click');
+    alert("test")
 }
-console.log(title);
+
+function handleWindowResize() {
+    document.body.style.backgroundColor = 'red';
+
+}
+function handleCopy() {
+    alert("copy");
+}
+
+
 title.addEventListener('click', handleCilck);
-title.addEventListener('mouseenter', handleMouseEnter);
