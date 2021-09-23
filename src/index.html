@@ -5,18 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
     <form class="form-login hidden">
-      <input required maxlength="15" type="text" name="" class="input-field" placeholder="what is your name">
-      <input type="submit" value="login" class="login-btn">
-      
+      <input
+        required
+        maxlength="15"
+        type="text"
+        name=""
+        class="input-field"
+        placeholder="what is your name"
+      />
+      <input type="submit" value="login" class="login-btn" />
     </form>
     <h1 id="greeting" class="hidden"></h1>
-    <input type="button" value="test" class="btn">;
+    <h2 class="clock">00:00:00</h2>
+    <div id="quote">
+      <span></span>
+      <span></span>
+    </div>
+    <input type="button" value="test" class="btn" />;
     <script src="./js/index.js"></script>
-
+    <script src="./js/quotes.js"></script>
+    <script src="./js/clock.js"></script>
   </body>
 </html>
